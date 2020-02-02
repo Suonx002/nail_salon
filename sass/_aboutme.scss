@@ -6,7 +6,10 @@
 
   &__img {
     width: 50%;
+    height: 40rem;
+    object-fit: cover;
     flex: 1;
+    border-radius: 3px;
   }
   &__content {
     margin-left: 1rem;

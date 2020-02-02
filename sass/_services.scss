@@ -1,6 +1,10 @@
 .services {
   padding: 2rem;
 
+  &__heading {
+    text-align: center;
+  }
+
   &__menu {
     list-style: none;
 
@@ -18,11 +22,10 @@
 
   &__item {
     padding: 1rem 0;
-
     display: flex;
     justify-content: space-between;
     align-items: start;
-    border-bottom: 2px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
 
     &:nth-child(15),
     &:nth-child(16) {
@@ -33,10 +36,15 @@
   &__title {
     font-size: 2rem;
     letter-spacing: 2px;
+    margin-bottom: 0.5rem;
   }
 
   &__description {
     font-weight: 300;
     font-size: 1.4rem;
+  }
+
+  &__price {
+    margin-right: 1rem;
   }
 }

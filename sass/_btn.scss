@@ -3,22 +3,23 @@
   &:visited {
     text-decoration: none;
     padding: 1.5rem 3rem;
-    background-color: $color-primary;
-    color: #fff;
+    background-color: #fff;
+    color: $color-grey-dark-1;
     border-radius: 100px;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    border: none;
+    letter-spacing: 1px;
     font-size: 1.6rem;
     transition: all 0.3s ease-in;
+    outline: none;
+    font-weight: 700;
+    border: 2px solid $color-grey-dark-1;
   }
 
-  &__cta:active,
-  &__cta:focus {
-    outline: none;
+  &__cta {
+    background-color: $color-primary;
   }
 
   &__cta:hover {
-    background-color: rgba($color-primary, 0.6);
+    background-color: rgba($color-primary, 0.7);
   }
 }
