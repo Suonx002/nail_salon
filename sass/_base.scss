@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
 
 $color-primary: #ff00ff;
 $color-primary-light: #ff2eff;
 $color-primary-dark: #d100d1;
 
-$color-grey-light-1: #eee;
-$color-grey-dark-1: #161616;
+$color-grey-light-1: #b9b9b9;
+
+$color-grey-dark-1: #151515;
 
 *,
 *::before,
@@ -21,15 +22,19 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.5;
   min-height: 100vh;
   color: $color-grey-dark-1;
-  background-color: $color-grey-light-1;
   font-weight: 400;
+  font-size: 1.6rem;
 }
 
 .container {
   max-width: 120rem;
   margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
 }

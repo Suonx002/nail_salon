@@ -1,0 +1,42 @@
+.services {
+  padding: 2rem;
+
+  &__menu {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    border: 3px solid #f4f4f4;
+    padding: 2rem;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__item {
+    padding: 1rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border-bottom: 2px solid #f1f1f1;
+
+    &:nth-child(15),
+    &:nth-child(16) {
+      border: none;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+}
