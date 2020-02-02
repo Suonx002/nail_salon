@@ -1,0 +1,33 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  height: 5rem;
+  padding: 2rem;
+  background-color: #fff;
+
+  &__logo,
+  &__item a:link,
+  &__item a:visited {
+    padding: 1rem;
+    text-decoration: none;
+    color: $color-grey-dark-1;
+    font-weight: 400;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    padding: 1rem;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}
