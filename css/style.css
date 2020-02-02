@@ -14,7 +14,8 @@ body {
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
   min-height: 100vh;
-  color: #fff;
+  color: #161616;
+  background-color: #eee;
   font-weight: 400; }
 
 .container {
@@ -52,6 +53,11 @@ body {
   padding: 1rem;
   letter-spacing: 1px; }
 
+.secondary-text {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px; }
+
 .lead {
   font-size: 2rem;
   padding: 1rem;
@@ -73,6 +79,22 @@ body {
     position: absolute;
     padding: 2rem;
     top: 20%; }
+
+.aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; }
+  .aboutme__img {
+    width: 50%;
+    flex: 1; }
+  .aboutme__content {
+    margin-left: 1rem;
+    flex: 1;
+    padding: 1rem; }
+    .aboutme__content p {
+      font-size: 1.6rem;
+      margin-bottom: 1rem; }
 
 .btn:link, .btn:visited {
   text-decoration: none;
