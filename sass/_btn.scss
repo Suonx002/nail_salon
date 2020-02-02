@@ -1,0 +1,24 @@
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    background-color: $color-primary;
+    color: #fff;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    font-size: 1.6rem;
+    transition: all 0.3s ease-in;
+  }
+
+  &__cta:active,
+  &__cta:focus {
+    outline: none;
+  }
+
+  &__cta:hover {
+    background-color: rgba($color-primary, 0.6);
+  }
+}

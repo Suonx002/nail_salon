@@ -1,0 +1,21 @@
+.header {
+  height: calc(100vh - 6vh);
+
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('../img/hero-1.jpeg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &__span {
+    display: block;
+  }
+
+  &__text-box {
+    width: 60rem;
+    position: absolute;
+    padding: 2rem;
+    top: 20%;
+  }
+}

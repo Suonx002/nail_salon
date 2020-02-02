@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
 
-$color-grey-light-1: #b1b1b1;
-$color-grey-dark-1: #343740;
+$color-primary: #ff00ff;
+$color-primary-light: #ff2eff;
+$color-primary-dark: #d100d1;
+
+$color-grey-light-1: #eee;
+$color-grey-dark-1: #161616;
 
 *,
 *::before,
@@ -20,9 +24,8 @@ body {
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
   min-height: 100vh;
-  color: $color-grey-dark-1;
-
-  font-weight: 300;
+  color: #fff;
+  font-weight: 400;
 }
 
 .container {

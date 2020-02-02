@@ -14,8 +14,8 @@ body {
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
   min-height: 100vh;
-  color: #343740;
-  font-weight: 300; }
+  color: #fff;
+  font-weight: 400; }
 
 .container {
   max-width: 120rem;
@@ -26,7 +26,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 1.6rem;
-  height: 5rem;
+  height: 6vh;
   padding: 2rem;
   background-color: #fff; }
   .nav__logo,
@@ -34,7 +34,7 @@ body {
   .nav__item a:visited {
     padding: 1rem;
     text-decoration: none;
-    color: #343740;
+    color: #161616;
     font-weight: 400; }
   .nav__list {
     display: flex;
@@ -45,3 +45,49 @@ body {
     padding: 1rem; }
     .nav__item:not(:last-child) {
       margin-right: 1rem; }
+
+.primary-text {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  letter-spacing: 1px; }
+
+.lead {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+  font-weight: 300; }
+
+.header {
+  height: calc(100vh - 6vh);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/hero-1.jpeg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+  .header__span {
+    display: block; }
+  .header__text-box {
+    width: 60rem;
+    position: absolute;
+    padding: 2rem;
+    top: 20%; }
+
+.btn:link, .btn:visited {
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  background-color: #ff00ff;
+  color: #fff;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  font-size: 1.6rem;
+  transition: all 0.3s ease-in; }
+
+.btn__cta:active, .btn__cta:focus {
+  outline: none; }
+
+.btn__cta:hover {
+  background-color: rgba(255, 0, 255, 0.6); }
