@@ -21,12 +21,24 @@
   padding: 1rem 0;
 }
 
+.tertiary-text {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  color: $color-primary;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  border-bottom: 2px solid $color-primary;
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+
 .lead {
   font-size: 2rem;
   padding: 1rem;
   margin-bottom: 2.5rem;
   letter-spacing: 1px;
   // font-weight: 700;
-  color: $color-primary;
+  color: #fff;
   letter-spacing: 1px;
 }

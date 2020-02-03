@@ -4,7 +4,6 @@
     text-decoration: none;
     padding: 1.5rem 3rem;
     background-color: #fff;
-    color: $color-grey-dark-1;
     border-radius: 100px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -12,14 +11,11 @@
     transition: all 0.3s ease-in;
     outline: none;
     font-weight: 700;
-    border: 2px solid $color-grey-dark-1;
-  }
-
-  &__cta {
-    background-color: $color-primary;
+    border: 2px solid $color-primary;
+    color: $color-primary;
   }
 
   &__cta:hover {
-    background-color: rgba($color-primary, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
   }
 }
