@@ -22,10 +22,8 @@
 
   &__item {
     padding: 1rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
     border-bottom: 1px solid #f1f1f1;
+    position: relative;
 
     &:nth-child(15),
     &:nth-child(16) {
@@ -45,6 +43,14 @@
   }
 
   &__price {
-    margin-right: 1rem;
+    color: $color-primary;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+    span {
+      font-size: 2rem;
+    }
   }
 }

@@ -185,10 +185,8 @@ body {
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
   .services__item {
     padding: 1rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    border-bottom: 1px solid #f1f1f1; }
+    border-bottom: 1px solid #f1f1f1;
+    position: relative; }
     .services__item:nth-child(15), .services__item:nth-child(16) {
       border: none; }
   .services__title {
@@ -199,7 +197,13 @@ body {
     font-weight: 300;
     font-size: 1.4rem; }
   .services__price {
-    margin-right: 1rem; }
+    color: #be2f92;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-family: 'Open Sans Condensed', sans-serif; }
+    .services__price span {
+      font-size: 2rem; }
 
 .contact .card {
   padding: 1rem; }
