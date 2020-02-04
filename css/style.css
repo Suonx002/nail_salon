@@ -118,11 +118,10 @@ body {
   height: calc(100vh - 6vh);
   width: 100%;
   position: relative;
-  overflow: hidden;
   z-index: 0; }
   .header__img {
     position: absolute;
-    top: 0;
+    top: 6vh;
     bottom: 0;
     left: 0;
     right: 0;
@@ -152,7 +151,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem; }
+  padding: 2rem;
+  margin-top: 6vh; }
   .aboutme__img {
     width: 50%;
     height: 40rem;
