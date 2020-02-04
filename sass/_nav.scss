@@ -80,20 +80,21 @@
     align-items: center;
     justify-content: center;
 
-    &.show {
-      position: absolute;
-      z-index: 100;
-      display: flex;
-      flex-direction: column;
-      transform: translateX(3rem);
-      width: 20rem;
-      top: 100%;
-      right: 1rem;
-      background-color: #fff;
-      border: 3px solid #eee;
-    }
     @media screen and (max-width: 70rem) {
       display: none;
+
+      &.show {
+        position: absolute;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(3rem);
+        width: 20rem;
+        top: 100%;
+        right: 1rem;
+        background-color: #fff;
+        border: 3px solid #eee;
+      }
     }
   }
 
