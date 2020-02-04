@@ -4,6 +4,16 @@
     &:not(:last-child) {
       margin-right: 1rem;
     }
+
+    @media only screen and (max-width: 50em) {
+      &:first-child {
+        margin-bottom: 1rem;
+      }
+
+      &:last-child {
+        margin-right: 1rem;
+      }
+    }
   }
 
   &__info,
@@ -15,6 +25,11 @@
     padding: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    @media only screen and (max-width: 50em) {
+      grid-template-columns: 1fr;
+      padding: 2rem 1rem 2rem 2rem;
+    }
   }
 
   &__info {
@@ -44,5 +59,10 @@
       margin-bottom: 0.5rem;
       border-bottom: 1px solid $color-primary;
     }
+  }
+
+  &__time {
+    font-size: 2rem;
+    font-family: 'Open Sans Condensed', sans-serif;
   }
 }

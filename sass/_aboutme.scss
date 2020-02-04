@@ -21,4 +21,12 @@
       margin-bottom: 1rem;
     }
   }
+
+  @media only screen and (max-width: 50em) {
+    flex-direction: column;
+
+    &__img {
+      display: none;
+    }
+  }
 }

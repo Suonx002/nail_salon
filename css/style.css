@@ -35,7 +35,12 @@ body {
   font-size: 1.6rem;
   height: 6vh;
   padding: 1.5rem;
-  background-color: #fff; }
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100; }
   .nav__logo,
   .nav__item a:link,
   .nav__item a:visited {
@@ -65,6 +70,9 @@ body {
   font-weight: 300;
   font-family: 'Open Sans Condensed', sans-serif;
   text-transform: uppercase; }
+  @media only screen and (max-width: 50em) {
+    .primary-text {
+      font-size: 4.5rem; } }
 
 .secondary-text {
   font-size: 3rem;
@@ -77,6 +85,9 @@ body {
   border-bottom: 2px solid #be2f92;
   display: inline-block;
   padding: 1rem 0; }
+  @media only screen and (max-width: 50em) {
+    .secondary-text {
+      font-size: 2.7rem; } }
 
 .tertiary-text {
   font-size: 2rem;
@@ -88,6 +99,9 @@ body {
   border-bottom: 2px solid #be2f92;
   display: inline-block;
   padding: 0.5rem 0; }
+  @media only screen and (max-width: 50em) {
+    .tertiary-text {
+      font-size: 1.7rem; } }
 
 .lead {
   font-size: 2rem;
@@ -96,6 +110,9 @@ body {
   letter-spacing: 1px;
   color: #fff;
   letter-spacing: 1px; }
+  @media only screen and (max-width: 50em) {
+    .lead {
+      font-size: 1.7rem; } }
 
 .header {
   height: calc(100vh - 6vh);
@@ -124,6 +141,12 @@ body {
     top: 20%;
     background-color: transparent;
     color: #fff; }
+    @media only screen and (max-width: 50em) {
+      .header__text-box {
+        width: 60rem; } }
+    @media only screen and (max-width: 37em) {
+      .header__text-box {
+        width: 100%; } }
 
 .aboutme {
   display: flex;
@@ -143,6 +166,11 @@ body {
     .aboutme__content p {
       font-size: 1.6rem;
       margin-bottom: 1rem; }
+  @media only screen and (max-width: 50em) {
+    .aboutme {
+      flex-direction: column; }
+      .aboutme__img {
+        display: none; } }
 
 .gallery {
   padding: 2rem;
@@ -183,6 +211,9 @@ body {
     transition: all 0.3s ease-in; }
     .services__menu:hover {
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
+    @media only screen and (max-width: 50em) {
+      .services__menu {
+        grid-template-columns: 1fr; } }
   .services__item {
     padding: 1rem 0;
     border-bottom: 1px solid #f1f1f1;
@@ -203,12 +234,19 @@ body {
     right: 1rem;
     font-family: 'Open Sans Condensed', sans-serif; }
     .services__price span {
-      font-size: 2rem; }
+      font-size: 2rem;
+      padding: 0 1rem;
+      text-align: center; }
 
 .contact .card {
   padding: 1rem; }
   .contact .card:not(:last-child) {
     margin-right: 1rem; }
+  @media only screen and (max-width: 50em) {
+    .contact .card:first-child {
+      margin-bottom: 1rem; }
+    .contact .card:last-child {
+      margin-right: 1rem; } }
 
 .contact__info, .contact__hours {
   padding: 1rem; }
@@ -217,6 +255,10 @@ body {
   padding: 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
+  @media only screen and (max-width: 50em) {
+    .contact__content {
+      grid-template-columns: 1fr;
+      padding: 2rem 1rem 2rem 2rem; } }
 
 .contact__info {
   margin-bottom: 1rem; }
@@ -236,6 +278,10 @@ body {
   .contact__item:not(:last-child) {
     margin-bottom: 0.5rem;
     border-bottom: 1px solid #be2f92; }
+
+.contact__time {
+  font-size: 2rem;
+  font-family: 'Open Sans Condensed', sans-serif; }
 
 .btn:link, .btn:visited {
   text-decoration: none;
